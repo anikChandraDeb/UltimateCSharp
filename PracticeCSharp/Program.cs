@@ -15,6 +15,9 @@ namespace PracticeCSharp
 
             var variable = new Variable();
             variable.VariablePractice();
+
+            var op = new Operator();
+            op.OperatorPractice();
         }
     }
 }
