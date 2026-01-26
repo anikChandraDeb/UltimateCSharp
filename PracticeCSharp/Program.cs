@@ -18,6 +18,9 @@ namespace PracticeCSharp
 
             var op = new Operator();
             op.OperatorPractice();
+
+            var conditional = new ConditionalStatement();
+            conditional.PracticeConditionalStatement();
         }
     }
 }
