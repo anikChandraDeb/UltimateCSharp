@@ -79,6 +79,29 @@ namespace CSharpBasics
             Console.WriteLine("Interpolated Verbatim String ($@):");
             Console.WriteLine(configPath + "\n");
 
+            // -------------------------
+            // 8. String Build in Methods
+            // -------------------------
+
+            string sample1 = "Hello";
+            string sample2 = "World!";
+            Console.WriteLine("string.Concat Method: "+ string.Concat(sample1, " ", sample2));
+            string[] list = { "apple", "banana", "cherry" };
+            string joinedString = string.Join(", ", list);
+            Console.WriteLine("string.Join Method: "+ joinedString);
+            Console.WriteLine("string.IndexOf Method: " + sample1.IndexOf("lo"));
+            Console.WriteLine("string.Replace Method: " + sample2.Replace("World", "C#"));
+            Console.WriteLine("string.Substring Method: " + sample1.Substring(1, 3));
+            Console.WriteLine("string.Trim Method: " + "   padded string   ".Trim());
+            Console.WriteLine("string.Split Method: " + string.Join(" | ", "one,two,three".Split(',')));
+            Console.WriteLine("string.StartsWith Method: " + sample1.StartsWith("He"));
+            Console.WriteLine("string.EndsWith Method: " +   sample1.EndsWith("lo"));
+            Console.WriteLine("String.Insert Method: " + sample1.Insert(5, " C#"));
+
+            string test = sample1; // Both test and sample1 reference the same string object in memory (i.e same reference)
+            string newString = (string)sample1.Clone(); // Creates a new string that is a copy of the original string(e.g not same reference)
+            string newString2 = new string(sample1.ToCharArray()); // Creates a new string that is a copy of the original string(e.g not same reference)
+
             Console.WriteLine("=== END OF DEMO ===");
         }
     }

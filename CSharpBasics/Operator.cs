@@ -71,9 +71,9 @@ namespace CSharpBasics
             bool isAdmin = false;
 
             Console.WriteLine("Logical Operators:");
-            Console.WriteLine($"Logical AND (isLoggedIn && isAdmin): {isLoggedIn && isAdmin}"); //Check both side even if left side false
+            Console.WriteLine($"Logical AND (isLoggedIn && isAdmin): {isLoggedIn & isAdmin}"); //Check both side even if left side false
             Console.WriteLine($"Conditional AND (isLoggedIn && isAdmin): {isLoggedIn && isAdmin}"); //If left side false don't check right side
-            Console.WriteLine($"Logical OR (isLoggedIn || isAdmin): {isLoggedIn || isAdmin}");
+            Console.WriteLine($"Logical OR (isLoggedIn || isAdmin): {isLoggedIn | isAdmin}");
             Console.WriteLine($"Conditional OR (isLoggedIn || isAdmin): {isLoggedIn || isAdmin}");
             Console.WriteLine($"NOT (!isLoggedIn): {!isLoggedIn}\n");
 

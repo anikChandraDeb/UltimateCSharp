@@ -7,20 +7,24 @@ namespace PracticeCSharp
         static void Main(string[] args)
         {
             //CSharp Basics 
-            var firstProgram = new FirstProgram();
-            firstProgram.Print();
+            //var firstProgram = new FirstProgram();
+            //firstProgram.Print();
 
-            var consoleClass = new ConsoleClass();
-            consoleClass.PracticeConsole();
+            //var consoleClass = new ConsoleClass();
+            //consoleClass.PracticeConsole();
 
-            var variable = new Variable();
-            variable.VariablePractice();
+            //var variable = new Variable();
+            //variable.VariablePractice();
 
-            var op = new Operator();
-            op.OperatorPractice();
+            //var op = new Operator();
+            //op.OperatorPractice();
 
-            var conditional = new ConditionalStatement();
-            conditional.PracticeConditionalStatement();
+            //var conditional = new ConditionalStatement();
+            //conditional.PracticeConditionalStatement();
+
+            var practiceString = new StringClass();
+            practiceString.PracticeString();
+
         }
     }
 }
